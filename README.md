@@ -32,11 +32,10 @@ Tobii data that are provided in the data/export_tobii directory are only a few s
 
 <p align="center"> <img src="img/emoz_prop_assert_incr_goodmed.png" width="500"> </p>
 
-Example of figure of result.
+Example of output figure showing the mean proportion of fixation across participants and over time during the stimulation.
 
 
-
-### More details and comments will coming soon (and can be provided by request)
+### Output data structure
 
 Data struture output by emoz_timeanalysis_extract
 
@@ -48,11 +47,11 @@ Sdat.\[INTONATION_MEANING\].\[SPEAKER\]
 * .norming: array holding the mean rating scores per media \[Nmed x 1\]
 * .freq: structure with the frequency characteristics of the sentence per media, with field t1, t2, slope and time
 * .datalign : substructure containing the fixation data per AOI with field:
-	*.\[ALIGN_TIME\] : 
-        * time
-        * isfix: contains the temporal fixation hit values (1 if Correct AOI is fixed, 0 otherwise), store in a cellule of dimension \[Nmed x Nsubj\].
-    	* tclick matrix with reaction times (mouse click on the AOI) \[Nmed x Nsubj\]
-        * tcrit: structure with field tbeg, tnoun, tverb, tend, each holding critical time vector per media in seconds \[Nmed x 1\].
+  * .\[ALIGN_TIME\] : 
+    * time
+    * isfix: contains the temporal fixation hit values (1 if Correct AOI is fixed, 0 otherwise), store in a cellule of dimension \[Nmed x Nsubj\].
+    * tclick matrix with reaction times (mouse click on the AOI) \[Nmed x Nsubj\]
+    * tcrit: structure with field tbeg, tnoun, tverb, tend, each holding critical time vector per media in seconds \[Nmed x 1\].
 
 
 22 participants
